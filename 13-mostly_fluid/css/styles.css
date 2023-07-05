@@ -1,39 +1,63 @@
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
-    line-height: 2;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 h2 {
-    font-size: 3.2rem;
+  font-size: 3.2rem;
 }
 
 p {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .entrada-blog a {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+  display: inline-block;
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /** CODIGO AQUI **/
+
+.contenedor {
+  width: 120rem; /* Establece el tamano del contenedor pero no es responsive */
+  max-width: 120rem;
+  width: 95%; /* agarra el espacio del contenedor de manera responsive y porcentualmente */
+  margin: 0 auto; /* centra el contenido dentro del contenedor */
+}
+
+img {
+  /* width: 100%; */ /* siempre sera responsive, pero no forza a crecer la imagen hasta el 100% */
+  max-width: 100%; /* simpre sera responsive, pero no  forza la imagen a crecer hasta el 100% */
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contenedor {
+    width: 60%;
+  }
+}
